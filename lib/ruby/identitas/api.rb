@@ -1,9 +1,15 @@
 require "ruby/identitas/api/version"
+require "ruby/identitas/configuration"
+require "httparty"
+require "ruby/identitas/main"
 
 module Ruby
   module Identitas
     module Api
-      # Your code goes here...
+      extend Ruby::Identitas::Configuration
+
+      define_setting :url, "https://api.identitas.com"
+
     end
   end
 end
