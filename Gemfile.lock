@@ -1,7 +1,7 @@
 PATH
   remote: .
   specs:
-    ruby-identitas-api (0.1.0)
+    ruby-identitas-api (0.2.0)
       httparty
 
 GEM
