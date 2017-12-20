@@ -30,12 +30,42 @@ Access API
 
 ```ruby
 request = Ruby::Identitas::Main.new("YOUR_ACCESS_TOKEN")
-request.me
+response = request.me
 ```
 
 ## Endpoints
 
-- me
+### me
+
+Get detail information about user
+
+parameters :
+
+| name         | type         |
+| ------------ | ------------ |
+|`access_token`| query string |
+
+example :
+
+```ruby
+response = request.me.parsed_response
+```
+
+### token status
+
+Check token status
+
+parameters :
+
+| name         | type         |
+| ------------ | ------------ |
+|`access_token`| query string |
+
+example :
+
+```ruby
+response = request.token_status.parsed_response
+```
 
 ## Development
 
