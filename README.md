@@ -67,7 +67,7 @@ example :
 response = request.token_status.parsed_response
 ```
 
-### Chane password
+### Change password
 
 Change password
 
@@ -83,6 +83,27 @@ example :
 
 ```ruby
 response = request.password({password: "mys3cret", password_confirmation: "mys3cret"}).parsed_response
+```
+
+### Create user
+
+Create a new user
+
+parameters :
+
+| name         | type         |
+| ------------ | ------------ |
+|`access_token`| query string |
+|`email`| query string |
+|`first_name`| query string |
+|`last_name`| query string |
+|`password`| query string |
+|`password_confirmation`| query string |
+
+example :
+
+```ruby
+response = request.create_user({email: "m.yunan.helmy@gmail.com", first_name: "Yunan", last_name: "Helmy", password: "mys3cret", password_confirmation: "mys3cret"}).parsed_response
 ```
 
 ## Development
