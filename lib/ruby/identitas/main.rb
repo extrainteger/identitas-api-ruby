@@ -1,5 +1,6 @@
 require "ruby/identitas/endpoints/me"
 require "ruby/identitas/endpoints/token_status"
+require "ruby/identitas/endpoints/password"
 
 module Ruby
   module Identitas
@@ -7,6 +8,7 @@ module Ruby
       include HTTParty
       include Ruby::Identitas::Endpoints::Me
       include Ruby::Identitas::Endpoints::TokenStatus
+      include Ruby::Identitas::Endpoints::Password
 
       def initialize(token)
         @base_uri = Ruby::Identitas::Api.url

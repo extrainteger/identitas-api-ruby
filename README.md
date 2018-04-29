@@ -67,6 +67,24 @@ example :
 response = request.token_status.parsed_response
 ```
 
+### Chane password
+
+Change password
+
+parameters :
+
+| name         | type         |
+| ------------ | ------------ |
+|`access_token`| query string |
+|`password`| query string |
+|`password_confirmation`| query string |
+
+example :
+
+```ruby
+response = request.password({password: "mys3cret", password_confirmation: "mys3cret"}).parsed_response
+```
+
 ## Development
 
 After checking out the repo, run `bin/setup` to install dependencies. Then, run `rake spec` to run the tests. You can also run `bin/console` for an interactive prompt that will allow you to experiment.
