@@ -35,6 +35,22 @@ response = request.me
 
 ## Endpoints
 
+### verify credential
+
+Verify your credential
+
+parameters :
+
+| name         | type         |
+| ------------ | ------------ |
+|`access_token`| query string |
+
+example :
+
+```ruby
+response = request.verify_credential.parsed_response
+```
+
 ### me
 
 Get detail information about user

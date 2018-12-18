@@ -8,7 +8,7 @@ module Ruby
     module Api
       extend Ruby::Identitas::Configuration
 
-      define_setting :url, "https://api.identitas.com"
+      define_setting :url, "https://symbolic.id"
 
     end
   end
