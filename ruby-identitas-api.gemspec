@@ -10,8 +10,8 @@ Gem::Specification.new do |spec|
   spec.authors       = ["yunanhelmy"]
   spec.email         = ["m.yunan.helmy@gmail.com"]
 
-  spec.summary       = "API wrapper for Identitas"
-  spec.description   = "API wrapper for Identitas"
+  spec.summary       = "API wrapper for Symbolic"
+  spec.description   = "API wrapper for Symbolic"
   spec.homepage      = "https://github.com/extrainteger/ruby-identitas-api"
   spec.license       = "MIT"
 
