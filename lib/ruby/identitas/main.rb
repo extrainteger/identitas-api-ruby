@@ -17,7 +17,7 @@ module Ruby
       def initialize(token, api_key = "")
         @base_uri = Ruby::Identitas::Api.url
         @token = token
-        @ap_key = api_key
+        @api_key = api_key
       end
 
       private
