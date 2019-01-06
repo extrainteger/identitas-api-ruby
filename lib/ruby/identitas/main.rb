@@ -3,6 +3,7 @@ require "ruby/identitas/endpoints/token_status"
 require "ruby/identitas/endpoints/password"
 require "ruby/identitas/endpoints/user"
 require "ruby/identitas/endpoints/internal/password"
+require "ruby/identitas/endpoints/internal/invite_user"
 
 module Ruby
   module Identitas
@@ -13,6 +14,7 @@ module Ruby
       include Ruby::Identitas::Endpoints::Password
       include Ruby::Identitas::Endpoints::User
       include Ruby::Identitas::Endpoints::Internal::Password
+      include Ruby::Identitas::Endpoints::Internal::InviteUser
 
       def initialize(token, api_key = "")
         @base_uri = Ruby::Identitas::Api.url
